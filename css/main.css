@@ -1,6 +1,8 @@
 :root {
   --primary-color: #00b0ff;
-  --text-primary-color: #111827; }
+  --secondary-color: #536dfe;
+  --text-primary-color: #111827;
+  --text-secondary-color: #6b7280; }
 
 * {
   box-sizing: border-box;
@@ -17,8 +19,34 @@ ul {
   list-style: none; }
 
 footer {
+  padding: 40px;
   width: 80vw;
   margin: auto; }
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.8rem 1rem;
+  transform: all 1s;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px; }
+
+.btn-primary {
+  color: #fff;
+  background-color: var(--primary-color); }
+  .btn-primary:hover {
+    color: var(--text-primary-color);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4); }
+
+.container-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center; }
+
+.text-secondary {
+  color: var(--text-secondary-color); }
 
 .navigation {
   z-index: 1;
@@ -79,12 +107,138 @@ footer {
     color: var(--text-primary-color); }
 
 .technologies {
-  width: 80vw;
-  margin: auto; }
+  margin: 80px 0; }
+  .technologies .technologies-grid {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: 200px 250px 250px;
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 1.5rem;
+    padding: 20px; }
+    .technologies .technologies-grid .technologies-heading {
+      grid-column: 2 / span 3;
+      align-self: center;
+      font-size: 62px; }
+    .technologies .technologies-grid .technologies-image {
+      grid-column: 1;
+      grid-row: 1 / span 2;
+      background: url("../images/technology.png");
+      height: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .technologies .technologies-grid .technologies-content {
+      grid-column: 2 / span 3;
+      align-self: start;
+      font-size: 20px; }
+      .technologies .technologies-grid .technologies-content .highlight {
+        color: white;
+        background-color: var(--primary-color);
+        padding: 10px;
+        border-radius: 20px;
+        line-height: 30px;
+        margin-bottom: 20px; }
+        .technologies .technologies-grid .technologies-content .highlight:hover {
+          color: white;
+          background-color: var(--secondary-color);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); }
+
+.projects {
+  margin: 80px 0; }
+  .projects .projects-grid {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: 200px 250px 250px;
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 1.5rem;
+    padding: 20px; }
+    .projects .projects-grid .projects-heading {
+      grid-column: 2 / span 3;
+      align-self: center;
+      font-size: 62px; }
+    .projects .projects-grid .projects-image {
+      grid-column: 1;
+      grid-row: 1 / span 2;
+      background: url("../images/project.png");
+      height: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      align-self: center;
+      justify-content: center;
+      justify-self: center;
+      align-content: center; }
+    .projects .projects-grid .projects-content {
+      grid-column: 2 / span 3;
+      align-self: start;
+      font-size: 20px; }
 
 .blogs {
-  width: 80vw;
-  margin: auto; }
+  margin: 80px 0; }
+  .blogs .blogs-grid {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: 200px 250px 250px;
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 1.5rem;
+    padding: 20px; }
+    .blogs .blogs-grid .blogs-heading {
+      grid-column: 2 / span 3;
+      align-self: center;
+      font-size: 62px; }
+    .blogs .blogs-grid .blogs-image {
+      grid-column: 1;
+      grid-row: 1 / span 2;
+      background: url("../images/blog.png");
+      height: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      align-self: center;
+      justify-content: center;
+      justify-self: center;
+      align-content: center; }
+    .blogs .blogs-grid .blogs-content {
+      grid-column: 2 / span 3;
+      align-self: start;
+      font-size: 20px; }
+
+.main-footer {
+  background: var(--primary-color);
+  background: -webkit-linear-gradient(to bottom, #fff, var(--primary-color));
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #fff, var(--primary-color));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  width: 100%; }
+  .main-footer .footer-content {
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+    align-items: flex-end; }
+    .main-footer .footer-content .footer-text {
+      font-size: 20px;
+      margin-right: 40px; }
+    .main-footer .footer-content .social .fab {
+      border-radius: 50%;
+      color: #fff;
+      text-align: center;
+      padding: 0.5rem; }
+      .main-footer .footer-content .social .fab:hover {
+        background-color: var(--secondary-color);
+        cursor: pointer; }
+
+.progress-div .progress {
+  overflow: hidden;
+  height: 20px;
+  background: red;
+  border-radius: 5px;
+  margin-bottom: 0.3rem; }
+  .progress-div .progress div {
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    background: orange; }
 
 @media screen and (max-width: 1366px) {
   .hero .hero-content {
@@ -94,9 +248,8 @@ footer {
     font-size: 50px;
     line-height: 60px;
     margin-bottom: 150px; }
-  .technologies {
-    width: 80vw;
-    margin: auto; }
+  .technologies .technologies-grid .technologies-heading {
+    font-size: 50px; }
   .blogs {
     width: 80vw;
     margin: auto; } }

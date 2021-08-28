@@ -11,8 +11,11 @@
   }
 
   .technologies {
-    width: 80vw;
-    margin: auto;
+    .technologies-grid {
+      .technologies-heading {
+        font-size: 50px;
+      }
+    }
   }
 
   .blogs {

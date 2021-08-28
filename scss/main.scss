@@ -1,0 +1,124 @@
+:root {
+  --primary-color: #00b0ff;
+  --text-primary-color: #111827;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+// section,
+// footer {
+//   width: 80vw;
+//   margin: auto;
+// }
+
+footer {
+  width: 80vw;
+  margin: auto;
+}
+
+.navigation {
+  z-index: 1;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  background: var(--primary-color);
+  background: -webkit-linear-gradient(
+    to bottom,
+    var(--primary-color),
+    #fff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    var(--primary-color),
+    #fff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  .nav-container {
+    padding: 20px 0;
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    color: #fff;
+    text-transform: uppercase;
+
+    ul {
+      display: flex;
+    }
+
+    li {
+      padding: 1rem 1.5rem;
+    }
+
+    a {
+      color: #fff;
+
+      text-decoration: none;
+      text-transform: uppercase;
+      border-bottom: 3px transparent solid;
+      padding-bottom: 0.5rem;
+      transition: border-color 0.3s;
+
+      &:hover {
+        border-color: #8b5cf6;
+      }
+    }
+  }
+}
+
+.hero {
+  width: 80vw;
+  margin: auto;
+  height: 100vh;
+  // text-align: end;
+  margin-top: 90px;
+  background: url("../images/01.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .hero-content {
+    // box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    padding-left: 250px;
+    font-weight: 800;
+    font-size: 72px;
+    text-align: center;
+    line-height: 85px;
+    margin-bottom: 230px;
+    color: var(--text-primary-color);
+  }
+}
+
+.technologies {
+  width: 80vw;
+  margin: auto;
+}
+
+.blogs {
+  width: 80vw;
+  margin: auto;
+}
+
+// Import Media Queries
+@import "media";

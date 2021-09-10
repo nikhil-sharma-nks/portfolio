@@ -78,7 +78,31 @@ footer {
       padding-bottom: 0.5rem;
       transition: border-color 0.3s; }
       .navigation .nav-container a:hover {
-        border-color: #8b5cf6; }
+        border-color: var(--secondary-color); }
+
+.main-footer {
+  background: var(--primary-color);
+  background: -webkit-linear-gradient(to bottom, #fff, var(--primary-color));
+  background: linear-gradient(to bottom, #fff, var(--primary-color));
+  color: #fff;
+  width: 100%; }
+  .main-footer .footer-content {
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+    align-items: center; }
+    .main-footer .footer-content .footer-text {
+      font-size: 20px;
+      margin-right: 40px; }
+    .main-footer .footer-content .social .fab {
+      border-radius: 50%;
+      color: #fff;
+      text-align: center;
+      padding: 0.5rem;
+      transition: all 0.5s; }
+      .main-footer .footer-content .social .fab:hover {
+        background-color: var(--secondary-color);
+        cursor: pointer; }
 
 .hero {
   width: 80vw;
@@ -197,42 +221,6 @@ footer {
       grid-column: 2 / span 3;
       align-self: start;
       font-size: 20px; }
-
-.main-footer {
-  background: var(--primary-color);
-  background: -webkit-linear-gradient(to bottom, #fff, var(--primary-color));
-  background: linear-gradient(to bottom, #fff, var(--primary-color));
-  color: #fff;
-  width: 100%; }
-  .main-footer .footer-content {
-    display: flex;
-    justify-content: center;
-    height: 4rem;
-    align-items: flex-end; }
-    .main-footer .footer-content .footer-text {
-      font-size: 20px;
-      margin-right: 40px; }
-    .main-footer .footer-content .social .fab {
-      border-radius: 50%;
-      color: #fff;
-      text-align: center;
-      padding: 0.5rem;
-      transition: all 0.5s; }
-      .main-footer .footer-content .social .fab:hover {
-        background-color: var(--secondary-color);
-        cursor: pointer; }
-
-.progress-div .progress {
-  overflow: hidden;
-  height: 20px;
-  background: red;
-  border-radius: 5px;
-  margin-bottom: 0.3rem; }
-  .progress-div .progress div {
-    height: 100%;
-    color: #fff;
-    text-align: center;
-    background: orange; }
 
 @media screen and (max-width: 1366px) {
   .hero .hero-content {

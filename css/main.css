@@ -26,7 +26,7 @@ footer {
 .btn-primary {
   display: inline-block;
   padding: 0.8rem 1rem;
-  transform: all 1s;
+  transition: all 1s;
   border: none;
   cursor: pointer;
   border-radius: 10px; }
@@ -51,16 +51,11 @@ footer {
 .navigation {
   z-index: 1;
   position: fixed;
-  /* Set the navbar to fixed position */
   top: 0;
-  /* Position the navbar at the top of the page */
   width: 100%;
-  /* Full width */
   background: var(--primary-color);
   background: -webkit-linear-gradient(to bottom, var(--primary-color), #fff);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, var(--primary-color), #fff);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  background: linear-gradient(to bottom, var(--primary-color), #fff); }
   .navigation .nav-container {
     padding: 20px 0;
     display: flex;
@@ -206,9 +201,7 @@ footer {
 .main-footer {
   background: var(--primary-color);
   background: -webkit-linear-gradient(to bottom, #fff, var(--primary-color));
-  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #fff, var(--primary-color));
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
   width: 100%; }
   .main-footer .footer-content {
@@ -223,7 +216,8 @@ footer {
       border-radius: 50%;
       color: #fff;
       text-align: center;
-      padding: 0.5rem; }
+      padding: 0.5rem;
+      transition: all 0.5s; }
       .main-footer .footer-content .social .fab:hover {
         background-color: var(--secondary-color);
         cursor: pointer; }

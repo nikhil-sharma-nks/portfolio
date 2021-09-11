@@ -100,6 +100,8 @@ footer {
       transition: border-color 0.3s; }
       .navigation .nav-container a:hover {
         border-color: var(--secondary-color); }
+    .navigation .nav-container .current {
+      border-color: var(--secondary-color); }
 
 .main-footer {
   background: var(--primary-color);

@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap");
+:root {
+  --primary-color: #00b0ff;
+  --secondary-color: #536dfe;
+  --text-primary-color: #111827;
+  --text-secondary-color: #6b7280; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--text-primary-color); }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+footer {
+  padding: 40px;
+  width: 80vw;
+  margin: auto; }
+
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: 0.8rem 1rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+  border-radius: 40px; }
+
+.btn-primary {
+  color: #fff;
+  background-color: var(--primary-color); }
+  .btn-primary:hover {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4); }
+
+.btn-secondary {
+  color: var(--secondary-color);
+  background-color: white;
+  border: 1px solid var(--secondary-color); }
+  .btn-secondary:hover {
+    box-shadow: 0 3px 10px var(--secondary-color); }
+
+.page-heading {
+  margin-top: 130px;
+  text-align: center;
+  font-size: 2rem;
+  font-family: cursive;
+  font-weight: bolder; }
+
+.container-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center; }
+
+.text-secondary {
+  color: var(--text-secondary-color); }
+
+.navigation {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--primary-color);
+  background: -webkit-linear-gradient(to bottom, var(--primary-color), #fff);
+  background: linear-gradient(to bottom, var(--primary-color), #fff); }
+  .navigation .nav-container {
+    padding: 20px 0;
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    color: #fff;
+    text-transform: uppercase; }
+    .navigation .nav-container .nav-brand {
+      font-family: "Zen Tokyo Zoo", cursive;
+      font-size: 2rem; }
+    .navigation .nav-container ul {
+      display: flex; }
+    .navigation .nav-container li {
+      padding: 1rem 1.5rem; }
+    .navigation .nav-container a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-bottom: 3px transparent solid;
+      padding-bottom: 0.5rem;
+      transition: border-color 0.3s; }
+      .navigation .nav-container a:hover {
+        border-color: var(--secondary-color); }
+
+.main-footer {
+  background: var(--primary-color);
+  background: -webkit-linear-gradient(to bottom, #fff, var(--primary-color));
+  background: linear-gradient(to bottom, #fff, var(--primary-color));
+  color: #fff;
+  width: 100%; }
+  .main-footer .footer-content {
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+    align-items: center; }
+    .main-footer .footer-content .footer-text {
+      font-size: 20px;
+      margin-right: 40px; }
+    .main-footer .footer-content .social .fab {
+      border-radius: 50%;
+      color: #fff;
+      text-align: center;
+      padding: 0.5rem;
+      transition: all 0.5s; }
+      .main-footer .footer-content .social .fab:hover {
+        background-color: var(--secondary-color);
+        cursor: pointer; }
+
+.about-me-container {
+  margin: 100px auto;
+  width: 60%; }
+
+table {
+  border: 2px solid var(--primary-color);
+  text-align: justify;
+  margin: auto;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 80%; }
+
+th,
+td {
+  text-align: center;
+  padding: 10px;
+  /* width: 40px; */
+  border-collapse: collapse;
+  border: 2px solid var(--primary-color); }

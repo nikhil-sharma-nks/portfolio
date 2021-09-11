@@ -75,5 +75,15 @@
       color: var(--text-secondary-color);
       font-style: italic;
     }
+
+    .primary-heading {
+      font-weight: bolder;
+      font-size: 1.5rem;
+    }
+
+    .secondary-heading {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
   }
 }

@@ -4,7 +4,319 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Blog Two | Emojis In Your Web App!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/blogs.css" />
   </head>
-  <body></body>
+  <body>
+    <nav class="navigation container">
+      <div class="nav-container">
+        <div class="nav-brand">Nikhil Sharma</div>
+        <ul class="options">
+          <li class="option"><a href="/">Home</a></li>
+          <li class="option"><a href="/pages/projects.html">Projects</a></li>
+          <li class="option"><a href="/pages/blogs/blogs.html">Blogs</a></li>
+          <li class="option"><a href="/pages/about.html">About Me</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="container-flex-center blog-showcase-container">
+      <div class="blog-showcase-heading">Traversing Data In Javascript</div>
+      <div class="blog-showcase-description">
+        Written By - Nikhil Sharma, September 2021
+      </div>
+      <div class="blog-showcase-content">
+        Data Structures are a huge part of any application. They are used
+        intensely in the world of programming. Hence a programmer's most time is
+        spent creating algorithms using data structures. Knowing how to access
+        or traverse data is definitely going to come in handy. This is exactly
+        what we are exploring in this blog post.
+        <br />
+        <br />
+        <div class="primary-heading">For Loop</div>
+
+        Let's see how we can access iterable data structure using a traditional
+        for loop.
+        <br />
+        <div class="code">
+          const arr = ["zero", "one", "two", "three", "four", "five"];
+          <br />
+          for (let i = 0; i < arr.length; i++){
+          <br />
+          console.log(arr[i]);
+          <br />
+          //This is how we access every element of the array
+          <br />
+          }
+          <br />
+        </div>
+        <br />
+        A for statement looks as follows:
+        <br />
+        <div class="text-secondary">
+          for ([initialExpression]; [conditionExpression]; [incrementExpression])
+        </div>
+        
+        <br />
+        <div class="secondary-heading">When To Use Traditional For Loop</div>
+
+        The traditional for loop give you immense control over the iteration. A
+        traditional for loop should be preferred in following situations:-
+        <br />
+        <div class="text-secondary">
+          - When you want to start iteration at some specific index You can chose
+          the from where to start the iteration i.e., initial counter
+        </div>
+        
+        <br />
+        <div class="code">
+          const arr = ["zero", "one", "two", "three", "four", "five"];
+          <br />
+          for (let i = 3; i < arr.length; i++) {
+          <br />
+
+          console.log(arr[i]); //This will start printing from third index
+          onwards
+          <br />
+
+          }
+        </div>
+
+        <br />
+        <div class="text-secondary">
+          - When you want to increment the counter according to your preference
+        </div>
+        
+        Consider a situation where you want to access elements according to some
+        criteria. For example to select elements only at even index would look
+        like following
+        <br />
+        <div class="code">
+          const arr = ["zero", "one", "two", "three", "four", "five"];
+          <br />
+          for (let i = 0; i < arr.length; i+=2) {
+          <br />
+          console.log(arr[i]); //This will print elements only at even indices
+          <br />
+          }
+        </div>
+
+        <br />
+        <div class="text-secondary">
+          - When you want to exit the loop at some point
+        </div>
+      
+        Consider a situation where you want to iterate until certain criteria is
+        fulfilled. For example - Searching! Suppose you are traversing an array
+        to search for an element. You happen to find it, so now that you have
+        found the element, doesn't it make sense to come out of the loop instead
+        of traversing further
+        <br />
+        <div class="code">
+          const arr = ["zero", "one", "two", "three", "four", "five"];
+          <br />
+          for (let i = 0; i < arr.length; i++)
+          <br />
+          { if(arr[i] === "three"){
+          <br />
+          console.log("Breaking out of the loop"); //At this point, we will
+          break out of the loop
+          <br />
+          //won't move forward to rest of the indices }
+          <br />
+          }
+        </div>
+
+        <br />
+        <div class="primary-heading">For-In</div>
+
+        Loop The for-in loop always loops over an object’s elements one by one.
+        These names can be array indexes or key-value pairs. The synt.ax: 
+        <br/>
+        <div class="text-secondary">
+          for
+          (let i in object) { console.log(object[i]); }
+        </div>
+       
+        <br />
+        <div class="code">
+          const student =
+          <br />
+          { name: "Nikhil",
+          <br />
+          last_name: "Sharma",
+          <br />
+          school: "KV JNU",
+          <br />
+          university: "Gautam Buddha University",
+          <br />
+          };
+          <br />
+          for (let key in student) {
+          <br />
+          console.log(key); //prints keys from the object
+          <br />
+          }
+          <br />
+          /* OUTPUT
+          <br />
+          name
+          <br />
+          last_name
+          <br />
+          school
+          <br />university <br />
+          */
+        </div>
+
+        <br />
+        <div class="text-secondary">
+          - If the object is an array, the for-in loop will print out the array
+          indexes in order.
+        </div>
+       
+        <div class="text-secondary">
+          - If the object contains key-value pairs, the for-in loop will print out
+          each key that exists.
+        </div>
+      
+        <div class="text-secondary">
+          - for-in is not a good choice for looping over Arrays: It visits
+          property keys, not values. As property keys, the indices of Array
+          elements are strings, not numbers
+        </div>
+        
+        <div class="text-secondary">
+          - for-in skip empty elements in the array.
+        </div>
+        <br />
+        <div class="primary-heading">For-Of</div>
+
+        Loop The for...of statement creates a loop Iterating over iterable
+        objects (including Array, Map, Set, arguments object and so on),
+        invoking a custom iteration hook with statements to be executed for the
+        value of each distinct property.
+        <br />
+        <div class="code">
+          const arr = ["red", "blue", "green"];
+          <br />
+          for (let value of arr) {
+          <br />
+          console.log(value); //prints value in array
+          <br />
+          }
+          <br />
+          /*
+          <br />
+          OUTPUT
+          <br />
+          red
+          <br />
+          blue
+          <br />
+          green
+          <br />*/
+        </div>
+
+        <br />
+        <div class="secondary-heading">Points to note</div>
+        <div class="text-secondary">
+          - If the object is an array, the for-of loop will print out the values
+          of the array’s indexes in order.
+        </div>
+      
+        <div class="text-secondary">
+          - If the object contains key-value pairs, the for-of loop will print out
+          every value that exists.
+        </div>
+     
+        <div class="text-secondary">
+          - for-of does not skip empty elements in the array.
+        </div>
+      
+        <br />
+        <div class="primary-heading">Array.prototype.map()</div>
+
+        The map() method creates a new array populated with the results of
+        calling a provided function on every element in the calling array.
+        <br />
+        <div class="code">
+          const arr = ["red", "blue", "green"];
+          <br />
+          arr.map(value => console.log(value));
+          <br />
+          /* OUTPUT
+          <br />
+          red
+          <br />
+          blue
+          <br />
+          green
+          <br />
+          */
+        </div>
+
+        <br />
+        <div class="secondary-heading">Points to note</div>
+        <div class="text-secondary">
+          - Array.map() returns a new array Like for loop you can't determine the
+          initial counter, termination-counter, increment.
+        </div>
+       
+        <div class="text-secondary">
+          - Array.map() will iterate through each and every element without
+          skipping.
+        </div>
+        
+        <div class="text-secondary">
+          - You can't exit out of the loop like break in for-loop.
+        </div>
+        
+        <br />
+        <div class="primary-heading">forEach() loop</div>
+
+        The forEach() method executes a provided function once for each array
+        element.
+        <br />
+        <div class="code">
+          const arr = ["red", "blue", "green"];
+          <br />
+          arr.forEach((value, index) => {
+          <br />
+          console.log(index, value); <br />});
+          <br />
+          /*OUTPUT
+          <br />
+          0 red
+          <br />
+          1 blue
+          <br />
+          2 green
+          <br />
+          */
+        </div>
+        <div class="secondary-heading">
+           Points to note
+        </div>
+        <div class="text-secondary">
+          - for-each skip empty elements in the array. You can't
+        </div>
+          <div class="text-secondary">
+            - break out of the for-each loop using break.
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

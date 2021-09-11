@@ -173,3 +173,9 @@ footer {
     .blog-showcase-container .blog-showcase-content .text-secondary {
       color: var(--text-secondary-color);
       font-style: italic; }
+    .blog-showcase-container .blog-showcase-content .primary-heading {
+      font-weight: bolder;
+      font-size: 1.5rem; }
+    .blog-showcase-container .blog-showcase-content .secondary-heading {
+      font-weight: bold;
+      font-size: 1.2rem; }

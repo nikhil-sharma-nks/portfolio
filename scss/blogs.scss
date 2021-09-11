@@ -46,3 +46,34 @@
     }
   }
 }
+
+.blog-showcase-container {
+  margin: 100px auto;
+  width: 60%;
+
+  .blog-showcase-heading {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .blog-showcase-description {
+    color: var(--text-secondary-color);
+    margin-bottom: 30px;
+  }
+
+  .blog-showcase-content {
+    text-align: justify;
+    line-height: 2rem;
+
+    .code {
+      color: white;
+      background: black;
+      padding: 30px;
+    }
+
+    .text-secondary {
+      color: var(--text-secondary-color);
+      font-style: italic;
+    }
+  }
+}

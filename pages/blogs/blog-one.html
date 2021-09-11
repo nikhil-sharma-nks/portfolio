@@ -4,7 +4,113 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Blog One | Emojis In Your Web App!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/blogs.css" />
   </head>
-  <body></body>
+  <body>
+    <nav class="navigation container">
+      <div class="nav-container">
+        <div class="nav-brand">Nikhil Sharma</div>
+        <ul class="options">
+          <li class="option"><a href="/">Home</a></li>
+          <li class="option"><a href="/pages/projects.html">Projects</a></li>
+          <li class="option"><a href="/pages/blogs/blogs.html">Blogs</a></li>
+          <li class="option"><a href="/pages/about.html">About Me</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="container-flex-center blog-showcase-container">
+      <div class="blog-showcase-heading">Emojis In Your Web App!</div>
+      <div class="blog-showcase-description">
+        Written By - Nikhil Sharma, September 2021
+      </div>
+      <div class="blog-showcase-content">
+        Emojis have made ways into our lives and are used everywhere. Today,
+        there is an emoji for almost everything. Web Apps have adjusted
+        themselves to make room for emojis. Let's take a deeper dive at emojis.
+        <br />
+
+        While working on a project Emoji Interpreter, it takes an emoji as an
+        input and tell you what it means. I came across something fascinating
+        while playing with javascript.
+        <br />
+        <br />
+        Guess the output for the following code:
+        <br />
+        <div class="code">
+          const emojiString = "😎";
+          <br />
+          console.log(emojiString.length);
+        </div>
+        <br />
+        If you guessed the answer is 1, I have two things to tell you. First, we
+        think the same! and second, we both were wrong. The correct answer is 2.
+        Let's explore more.
+        <br />
+        <br />
+        Consider the following code
+        <br />
+        <div class="code">
+          const emojiString = "😎";
+          <br />console.log(str.split(""));
+          <br />
+          /*OUTPUT ["\ud83d", "\ude02"] */
+        </div>
+        <br />
+        In Javascript, a string is a sequence of 16-bit code points. Since emoji
+        are encoded above the BMP, it means that they are represented by a pair
+        of code points, also known as a <i>surrogate pair.</i>
+        <br />
+        Surrogate pair is a representation for a single abstract character that
+        consists of a sequence of code units of two 16-bit code units, where the
+        first value of the pair is a high-surrogate code unit and the second
+        value is a low-surrogate code unit.
+        <br />
+        <div class="text-secondary">
+          The first pair is called the lead surrogate, and the latter the tail
+          surrogate. \ud83d is lead surrogate, \ude02 is tail surrogate.
+        </div>
+
+        <br />
+        Using the surrogate individually leads to nothing (�):-
+
+        <br />
+        <div class="code">
+          console.log("\ud83d"); // => �
+          <br />
+          console.log("\ude02"); //=> �
+        </div>
+        <br />
+
+        Using the surrogates together will get you an entity here, an emoji!
+        <br />
+        <div class="code">console.log("\ud83d\ude02"); // => 😎</div>
+        <br />
+
+        We can't switch the order of surrogates.
+        <br />
+        <div class="code">console.log("\ude02\ud83d"); // => ��</div>
+        <br />
+        <div class="text-secondary">
+          To summarize, string is stored using 16-bit code points, and an emoji
+          takes more than 16-bit code, so in unicode emoji is stores using two
+          16-bit codes. On dividing it into two parts, first one is called Lead
+          surrogate and second one Tail surrogate. Together they make up an
+          emoji 😎
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

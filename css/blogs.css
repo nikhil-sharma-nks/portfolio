@@ -153,3 +153,23 @@ footer {
       margin: 0 15px; }
     .blog-collections .blog-container:hover {
       box-shadow: 0 3px 10px var(--primary-color); }
+
+.blog-showcase-container {
+  margin: 100px auto;
+  width: 60%; }
+  .blog-showcase-container .blog-showcase-heading {
+    font-size: 2rem;
+    margin-bottom: 10px; }
+  .blog-showcase-container .blog-showcase-description {
+    color: var(--text-secondary-color);
+    margin-bottom: 30px; }
+  .blog-showcase-container .blog-showcase-content {
+    text-align: justify;
+    line-height: 2rem; }
+    .blog-showcase-container .blog-showcase-content .code {
+      color: white;
+      background: black;
+      padding: 30px; }
+    .blog-showcase-container .blog-showcase-content .text-secondary {
+      color: var(--text-secondary-color);
+      font-style: italic; }

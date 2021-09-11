@@ -125,60 +125,22 @@ footer {
     margin-bottom: 230px;
     color: var(--text-primary-color); }
 
-.technologies {
+.container-flex-center {
   margin: 80px 0; }
-  .technologies .technologies-grid {
+  .container-flex-center .container-grid {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     display: grid;
     grid-template-columns: 200px 250px 250px;
     grid-template-rows: repeat(2, auto);
     grid-gap: 1.5rem;
     padding: 20px; }
-    .technologies .technologies-grid .technologies-heading {
+    .container-flex-center .container-grid .container-grid-heading {
       grid-column: 2 / span 3;
       align-self: center;
       font-size: 62px; }
-    .technologies .technologies-grid .technologies-image {
+    .container-flex-center .container-grid .container-grid-image {
       grid-column: 1;
       grid-row: 1 / span 2;
-      background: url("../images/technology.png");
-      height: 100%;
-      width: 100%;
-      background-repeat: no-repeat;
-      background-size: contain; }
-    .technologies .technologies-grid .technologies-content {
-      grid-column: 2 / span 3;
-      align-self: start;
-      font-size: 20px; }
-      .technologies .technologies-grid .technologies-content .highlight {
-        color: white;
-        background-color: var(--primary-color);
-        padding: 10px;
-        border-radius: 20px;
-        line-height: 30px;
-        margin-bottom: 20px; }
-        .technologies .technologies-grid .technologies-content .highlight:hover {
-          color: white;
-          background-color: var(--secondary-color);
-          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); }
-
-.projects {
-  margin: 80px 0; }
-  .projects .projects-grid {
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    display: grid;
-    grid-template-columns: 200px 250px 250px;
-    grid-template-rows: repeat(2, auto);
-    grid-gap: 1.5rem;
-    padding: 20px; }
-    .projects .projects-grid .projects-heading {
-      grid-column: 2 / span 3;
-      align-self: center;
-      font-size: 62px; }
-    .projects .projects-grid .projects-image {
-      grid-column: 1;
-      grid-row: 1 / span 2;
-      background: url("../images/project.png");
       height: 100%;
       width: 100%;
       background-repeat: no-repeat;
@@ -187,40 +149,34 @@ footer {
       justify-content: center;
       justify-self: center;
       align-content: center; }
-    .projects .projects-grid .projects-content {
+    .container-flex-center .container-grid .container-grid-content {
       grid-column: 2 / span 3;
       align-self: start;
       font-size: 20px; }
 
-.blogs {
-  margin: 80px 0; }
-  .blogs .blogs-grid {
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    display: grid;
-    grid-template-columns: 200px 250px 250px;
-    grid-template-rows: repeat(2, auto);
-    grid-gap: 1.5rem;
-    padding: 20px; }
-    .blogs .blogs-grid .blogs-heading {
-      grid-column: 2 / span 3;
-      align-self: center;
-      font-size: 62px; }
-    .blogs .blogs-grid .blogs-image {
-      grid-column: 1;
-      grid-row: 1 / span 2;
-      background: url("../images/blog.png");
-      height: 100%;
-      width: 100%;
-      background-repeat: no-repeat;
-      background-size: contain;
-      align-self: center;
-      justify-content: center;
-      justify-self: center;
-      align-content: center; }
-    .blogs .blogs-grid .blogs-content {
-      grid-column: 2 / span 3;
-      align-self: start;
-      font-size: 20px; }
+.introduction .introduction-image {
+  background: url("../images/introduction.png"); }
+
+.technologies .technologies-image {
+  background: url("../images/technology.png"); }
+
+.technologies .highlight {
+  color: white;
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-radius: 20px;
+  line-height: 30px;
+  margin-bottom: 20px; }
+  .technologies .highlight:hover {
+    color: white;
+    background-color: var(--secondary-color);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); }
+
+.projects .projects-image {
+  background: url("../images/project.png"); }
+
+.blogs .blogs-image {
+  background: url("../images/blog.png"); }
 
 @media screen and (max-width: 1366px) {
   .hero .hero-content {

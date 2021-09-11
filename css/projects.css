@@ -49,6 +49,13 @@ footer {
   .btn-secondary:hover {
     box-shadow: 0 3px 10px var(--secondary-color); }
 
+.page-heading {
+  margin-top: 130px;
+  text-align: center;
+  font-size: 2rem;
+  font-family: cursive;
+  font-weight: bolder; }
+
 .container-flex-center {
   display: flex;
   justify-content: center;
@@ -117,13 +124,6 @@ footer {
       .main-footer .footer-content .social .fab:hover {
         background-color: var(--secondary-color);
         cursor: pointer; }
-
-.page-heading {
-  margin-top: 130px;
-  text-align: center;
-  font-size: 2rem;
-  font-family: cursive;
-  font-weight: bolder; }
 
 .project-collections {
   margin: auto;

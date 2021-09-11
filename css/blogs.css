@@ -125,90 +125,31 @@ footer {
         background-color: var(--secondary-color);
         cursor: pointer; }
 
-.hero {
-  width: 80vw;
+.blog-collections {
   margin: auto;
-  height: 100vh;
-  margin-top: 90px;
-  background: url("../images/01.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .hero .hero-content {
-    width: 70%;
-    padding-left: 250px;
-    font-weight: 800;
-    font-size: 72px;
-    text-align: center;
-    line-height: 85px;
-    margin-bottom: 230px;
-    color: var(--text-primary-color); }
-
-.container-flex-center {
-  margin: 80px 0; }
-  .container-flex-center .container-grid {
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    display: grid;
-    grid-template-columns: 200px 250px 250px;
-    grid-template-rows: repeat(2, auto);
-    grid-gap: 1.5rem;
-    padding: 20px; }
-    .container-flex-center .container-grid .container-grid-heading {
-      grid-column: 2 / span 3;
-      align-self: center;
-      font-size: 62px; }
-    .container-flex-center .container-grid .container-grid-image {
-      grid-column: 1;
-      grid-row: 1 / span 2;
-      height: 100%;
-      width: 100%;
-      background-repeat: no-repeat;
-      background-size: contain;
-      align-self: center;
-      justify-content: center;
-      justify-self: center;
-      align-content: center; }
-    .container-flex-center .container-grid .container-grid-content {
-      grid-column: 2 / span 3;
-      align-self: start;
-      font-size: 20px; }
-
-.introduction .introduction-image {
-  background: url("../images/introduction.png"); }
-
-.technologies .technologies-image {
-  background: url("../images/technology.png"); }
-
-.technologies .highlight {
-  color: white;
-  background-color: var(--primary-color);
-  padding: 10px;
-  border-radius: 20px;
-  line-height: 30px;
-  margin-bottom: 20px; }
-  .technologies .highlight:hover {
-    color: white;
-    background-color: var(--secondary-color);
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); }
-
-.projects .projects-image {
-  background: url("../images/project.png"); }
-
-.blogs .blogs-image {
-  background: url("../images/blog.png"); }
-
-@media screen and (max-width: 1366px) {
-  .hero .hero-content {
-    width: 65%;
-    padding-left: 130px;
-    font-weight: 800;
-    font-size: 50px;
-    line-height: 60px;
-    margin-bottom: 150px; }
-  .technologies .technologies-grid .technologies-heading {
-    font-size: 50px; }
-  .blogs {
-    width: 80vw;
-    margin: auto; } }
+  width: 60%;
+  padding: 20px; }
+  .blog-collections .blog-container {
+    border: 1px solid var(--primary-color);
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    transition: all 0.5s; }
+    .blog-collections .blog-container .blog-heading {
+      font-size: 1.5rem;
+      font-weight: bolder; }
+    .blog-collections .blog-container .blog-time {
+      font-size: 0.8rem;
+      margin-bottom: 15px;
+      color: var(--text-secondary-color); }
+    .blog-collections .blog-container .blog-description {
+      color: var(--secondary-color);
+      margin-bottom: 15px; }
+    .blog-collections .blog-container .blog-content {
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+      padding: 0 30px; }
+    .blog-collections .blog-container .showcase-buttons .btn {
+      margin: 0 15px; }
+    .blog-collections .blog-container:hover {
+      box-shadow: 0 3px 10px var(--primary-color); }

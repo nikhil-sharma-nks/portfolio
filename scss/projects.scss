@@ -1,0 +1,56 @@
+// Import Shared Utilities
+@import "utilities";
+
+.page-heading {
+  margin-top: 130px;
+  text-align: center;
+  font-size: 2rem;
+  font-family: cursive;
+  font-weight: bolder;
+}
+
+.project-collections {
+  margin: auto;
+  width: 60%;
+  padding: 20px;
+  .project-container {
+    // background: lightgray;
+    border: 1px solid var(--primary-color);
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    .project-heading {
+      font-size: 1.5rem;
+      font-weight: bolder;
+    }
+
+    .project-time {
+      font-size: 0.8rem;
+      margin-bottom: 15px;
+      color: var(--text-secondary-color);
+    }
+
+    .project-tech-stack {
+      color: var(--secondary-color);
+      margin-bottom: 15px;
+    }
+
+    .project-description {
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+      padding: 0 30px;
+    }
+
+    .showcase-buttons {
+      .btn {
+        margin: 0 15px;
+      }
+    }
+
+    &:hover {
+      // border: none;
+      box-shadow: 0 3px 10px var(--primary-color);
+    }
+  }
+}

@@ -29,6 +29,8 @@
   margin: 80px 0;
   .container-grid {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
     display: grid;
     // grid-template-columns: repeat(3, 10vw);
     grid-template-columns: 200px 250px 250px;

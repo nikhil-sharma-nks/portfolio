@@ -155,3 +155,219 @@ footer {
       margin: 0 15px; }
     .project-collections .project-container:hover {
       box-shadow: 0 3px 10px var(--primary-color); }
+
+@media screen and (max-width: 1366px) {
+  .hero .hero-content {
+    width: 65%;
+    padding-left: 130px;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 150px; }
+  .technologies .technologies-grid .technologies-heading {
+    font-size: 50px; }
+  .introduction .introduction-grid .introduction-heading {
+    font-size: 50px; }
+  .projects .projects-grid .projects-heading {
+    font-size: 50px; }
+  .blogs .blogs-grid .blogs-heading {
+    font-size: 50px; }
+  .blogs {
+    width: 80vw;
+    margin: auto; } }
+
+@media (max-width: 800px) {
+  .navigation {
+    position: unset;
+    width: 100%;
+    background: var(--primary-color);
+    background: -webkit-linear-gradient(to bottom, var(--primary-color), #fff);
+    background: linear-gradient(to bottom, var(--primary-color), #fff); }
+    .navigation .nav-container {
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+      width: 90vw;
+      margin: auto;
+      align-items: center;
+      justify-content: space-between;
+      margin: auto;
+      color: #fff;
+      text-transform: uppercase; }
+      .navigation .nav-container .nav-brand {
+        font-family: "Zen Tokyo Zoo", cursive;
+        font-size: 2.5rem; }
+      .navigation .nav-container ul {
+        display: flex; }
+      .navigation .nav-container li {
+        padding: 1rem 1rem;
+        padding: 20px;
+        font-size: 1.3rem; }
+      .navigation .nav-container a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-bottom: 3px transparent solid;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.3s; }
+        .navigation .nav-container a:hover {
+          border-color: var(--secondary-color); }
+      .navigation .nav-container .current {
+        border-color: var(--secondary-color); }
+  .hero {
+    height: 40vh;
+    margin-top: 10px;
+    align-items: flex-start; }
+    .hero .hero-content {
+      width: 85%;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 0;
+      margin-top: 90px;
+      padding-left: 200px; }
+  .container-flex-center {
+    margin: 30px auto;
+    width: 85%; }
+    .container-flex-center .container-grid {
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      display: grid;
+      grid-template-columns: 100px 150px 150px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: repeat(2, auto);
+      grid-gap: 1rem;
+      padding: 30px; }
+      .container-flex-center .container-grid .container-grid-heading {
+        grid-column: 2 / span 3;
+        align-self: center;
+        font-size: 40px; }
+      .container-flex-center .container-grid .container-grid-content {
+        grid-column: 2 / span 3;
+        align-self: start;
+        font-size: 20px; }
+  .technologies .highlight {
+    color: white;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-size: 15px; }
+  .btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 0.8rem 1rem;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 40px; }
+  .main-footer {
+    background: var(--primary-color);
+    background: -webkit-linear-gradient(to bottom, #fff, var(--primary-color));
+    background: linear-gradient(to bottom, #fff, var(--primary-color));
+    color: #fff;
+    width: 100%; }
+    .main-footer .footer-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 5rem;
+      align-items: center; }
+      .main-footer .footer-content .footer-text {
+        font-size: 30px;
+        margin-right: 0;
+        margin-top: 40px; }
+      .main-footer .footer-content .social .fab {
+        margin-top: 10px;
+        border-radius: 50%;
+        color: #fff;
+        text-align: center;
+        padding: 0.8rem;
+        transition: all 0.5s; }
+  .page-heading {
+    margin-top: 20px; }
+  .project-collections {
+    margin: auto;
+    width: 80%;
+    padding: 0; }
+    .project-collections .project-container {
+      border: 1px solid var(--primary-color);
+      padding: 20px;
+      margin-top: 40px;
+      border-radius: 10px;
+      transition: none; }
+      .project-collections .project-container .project-heading {
+        font-size: 1.8rem;
+        font-weight: bolder; }
+      .project-collections .project-container .project-time {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        color: var(--text-secondary-color); }
+      .project-collections .project-container .project-tech-stack {
+        color: var(--secondary-color);
+        margin-bottom: 15px;
+        font-size: 1.3rem; }
+      .project-collections .project-container .project-description {
+        margin-bottom: 15px;
+        font-size: 1.2rem;
+        padding: 0 30px; }
+      .project-collections .project-container .showcase-buttons .btn {
+        margin: 0 15px; }
+      .project-collections .project-container:hover {
+        box-shadow: 0 3px 10px var(--primary-color); }
+  .blog-collections {
+    margin: auto;
+    width: 80%;
+    padding: 0; }
+    .blog-collections .blog-container {
+      border: 1px solid var(--primary-color);
+      padding: 20px;
+      margin-top: 40px;
+      border-radius: 10px;
+      transition: all 0.5s; }
+      .blog-collections .blog-container .blog-heading {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+        font-weight: bolder; }
+      .blog-collections .blog-container .blog-time {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        color: var(--text-secondary-color); }
+      .blog-collections .blog-container .blog-description {
+        color: var(--secondary-color);
+        margin-bottom: 15px;
+        font-size: 1.3rem; }
+      .blog-collections .blog-container .blog-content {
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+        padding: 0 10px;
+        text-align: justify; }
+      .blog-collections .blog-container .showcase-buttons .btn {
+        margin: 0 15px; }
+      .blog-collections .blog-container:hover {
+        box-shadow: 0 3px 10px var(--primary-color); }
+  .blog-showcase-container {
+    margin: 50px auto;
+    width: 90vw;
+    height: 100%; }
+    .blog-showcase-container .blog-showcase-heading {
+      font-size: 2rem;
+      margin-bottom: 10px; }
+    .blog-showcase-container .blog-showcase-description {
+      color: var(--text-secondary-color);
+      margin-bottom: 30px; }
+    .blog-showcase-container .blog-showcase-content {
+      text-align: justify;
+      line-height: 2rem; }
+      .blog-showcase-container .blog-showcase-content .code {
+        color: white;
+        background: black;
+        padding: 30px; }
+      .blog-showcase-container .blog-showcase-content .text-secondary {
+        color: var(--text-secondary-color);
+        font-style: italic; }
+      .blog-showcase-container .blog-showcase-content .primary-heading {
+        font-weight: bolder;
+        font-size: 1.5rem; }
+      .blog-showcase-container .blog-showcase-content .secondary-heading {
+        font-weight: bold;
+        font-size: 1.2rem; } }

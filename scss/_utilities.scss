@@ -109,6 +109,9 @@ footer {
     .nav-brand {
       font-family: "Zen Tokyo Zoo", cursive;
       font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     ul {
